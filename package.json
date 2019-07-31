@@ -1,0 +1,38 @@
+{
+    "name": "jscollector",
+
+    "version": "1.0.0",
+
+    "main": "index.js",
+
+    "publishConfig": {
+
+        "access": "public"
+    },
+
+    "repository": {
+
+        "type": "git",
+        "url" : "https://github.com/hsbmaulana/jscollector.git"
+    },
+
+    "description": "Data Structure and Algorithm",
+
+    "keywords": [
+
+        "Data",
+        "Structure",
+        "Algorithm"
+    ],
+
+    "author": "Hasbi Maulana",
+
+    "license": "MIT",
+
+    "devDependencies": {
+        
+        "mocha": "6.2.0"
+    },
+
+    "dependencies": {}
+}
