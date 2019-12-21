@@ -24,6 +24,23 @@ module.exports = class ArraySort
         }
     }
 
+    insertion()
+    {
+        for(let i = 1; i < this.collection.count(); i++) {
+
+            let j = i - 1, temporary = this.collection.list[j + 1];
+
+            while(j >= 0 && this.collection.list[j] > temporary) {
+
+                this.collection.list[j + 1] = this.collection.list[j];
+
+                j--;
+            }
+
+            this.collection.list[j + 1] = temporary;
+        }
+    }
+
     selection()
     {
         for(let i = 0; i < this.collection.count(); i++) {

@@ -104,6 +104,36 @@ module.exports = class ArrayList extends IList
         }
     }
 
+    maximum()
+    {
+        var largest = 0;
+
+        for(let i = 1; i < this.count(); i++) {
+
+            if(this.list[i] > this.list[largest]) {
+
+                largest = i;
+            }
+        }
+
+        return this.list[largest];
+    }
+
+    minimum()
+    {
+        var smallest = 0;
+
+        for(let i = 1; i < this.count(); i++) {
+
+            if(this.list[i] < this.list[smallest]) {
+
+                smallest = i;
+            }
+        }
+
+        return this.list[smallest];
+    }
+
     modify(index, value)
     {
         if(index >= 0 && index < this.count()) {
